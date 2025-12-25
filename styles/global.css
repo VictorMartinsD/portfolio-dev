@@ -20,10 +20,22 @@
   --font-asap: "Asap", sans-serif;
   --font-inconsolata: "Inconsolata", monospace;
   --font-maven: "Maven Pro", sans-serif;
-  --title-lg: 700 24px/120% var(--font-asap);
-  --title-md: 700 56px/120% var(--font-asap);
+  --title-lg: 700 56px/120% var(--font-asap);
+  --title-md: 700 24px/120% var(--font-asap);
   --title-sm: 700 16px/120% var(--font-asap);
   --subtitle: 400 20px/120% var(--font-inconsolata);
   --text-md: 400 16px/140% var(--font-maven);
   --text-sm: 400 14px/140% var(--font-maven);
+}
+
+body {
+  background-color: var(--gray-400);
+  color: var(--gray-300);
+  font: var(--text-sm);
+}
+
+.container {
+  padding-inline: 32px;
+  margin-inline: auto;
+  justify-content: space-between;
 }
