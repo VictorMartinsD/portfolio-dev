@@ -32,10 +32,12 @@ body {
   background-color: var(--gray-400);
   color: var(--gray-300);
   font: var(--text-sm);
+  overflow-x: hidden;
 }
 
 .container {
   padding-inline: 32px;
   margin-inline: auto;
   justify-content: space-between;
+  max-width: 1280px;
 }
