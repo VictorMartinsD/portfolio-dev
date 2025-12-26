@@ -60,6 +60,11 @@ body {
   font: var(--text-md);
 }
 
+.git, .git svg { fill: var(--gray-200); color: var(--gray-200); }
+.html, .html svg { fill: var(--red); color: var(--red); }
+.css, .css svg { fill: var(--blue); color: var(--blue); }
+.js, .js svg { fill: var(--yellow); color: var(--yellow); }
+
 .container {
   padding-inline: 32px;
   margin-inline: auto;

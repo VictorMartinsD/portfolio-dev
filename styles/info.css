@@ -86,10 +86,6 @@
     transition: all 0.3s ease; 
     border: 1px solid transparent;
 
-    &.git svg { fill: var(--gray-200); }
-    &.html svg { fill: var(--red); }
-    &.css svg { fill: var(--blue); }
-
     &:hover {
       background-color: var(--gray-500);
       border-color: var(--gray-300);
