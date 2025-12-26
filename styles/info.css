@@ -18,7 +18,7 @@
     position: relative;
     width: 88px;
     height: 88px;
-    margin: 0 auto 56px; /* Simplifiquei o margin aqui */
+    margin: 0 auto 56px;
     cursor: pointer;
 
     & img {
@@ -69,7 +69,7 @@
     justify-content: center;
     padding: 0;
     flex-wrap: wrap;
-    margin-block: 80px 94px;
+    margin-block: 80px 130px;
     font: var(--text-md);
     color: var(--gray-200);
   }
@@ -85,12 +85,78 @@
     height: 40px;
     transition: all 0.3s ease; 
     border: 1px solid transparent;
+    position: relative;
+
+    & .tooltip {
+      position: absolute;
+      top: 140%;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      
+      background-color: var(--gray-500);
+      
+      color: var(--gray-100);
+      padding: 12px 16px;
+      border-radius: 8px;
+      font: var(--text-sm);
+      width: 220px;
+      text-align: center;
+      z-index: 20;
+      
+      border: 1px solid var(--gray-300);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 8px;
+        border-style: solid;
+        border-color: var(--gray-300) transparent transparent transparent;
+      }
+    }
 
     &:hover {
       background-color: var(--gray-500);
       border-color: var(--gray-300);
       box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
       transform: translateY(-2px);
+
+      & .tooltip {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+
+      &.git {
+        border-color: var(--gray-200);
+        & .tooltip { border-color: var(--gray-200); }
+        & .tooltip::after { border-top-color: var(--gray-200); }
+        & svg { filter: drop-shadow(0 0 5px var(--gray-200)); }
+      }
+
+      &.html {
+        border-color: var(--red);
+        & .tooltip { border-color: var(--red); }
+        & .tooltip::after { border-top-color: var(--red); }
+        & svg { filter: drop-shadow(0 0 5px var(--red)); }
+      }
+
+      &.css {
+        border-color: var(--blue);
+        & .tooltip { border-color: var(--blue); }
+        & .tooltip::after { border-top-color: var(--blue); }
+        & svg { filter: drop-shadow(0 0 5px var(--blue)); }
+      }
       
       &.git svg { filter: drop-shadow(0 0 5px var(--gray-200)); }
       &.html svg { filter: drop-shadow(0 0 5px var(--red)); }
