@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -35,41 +35,43 @@ body {
   overflow-x: hidden;
 }
 
-.title-lg {
-  color: var(--gray-100);
-  font: var(--title-lg);
-}
+.title-lg { color: var(--gray-100); font: var(--title-lg); }
+.title-md { color: var(--gray-100); font: var(--title-md); }
+.title-sm { color: var(--gray-200); font: var(--title-sm); }
+.subtitle { color: var(--gray-200); font: var(--subtitle); }
+.text-md { color: var(--gray-200); font: var(--text-md); }
 
-.title-md {
-  color: var(--gray-100);
-  font: var(--title-md);
+.git { 
+  &, & svg { fill: var(--gray-200); color: var(--gray-200); }
 }
-
-.title-sm {
-  color: var(--gray-200);
-  font: var(--title-sm);
+.html { 
+  &, & svg { fill: var(--red); color: var(--red); }
 }
-
-.subtitle {
-  color: var(--gray-200);
-  font: var(--subtitle);
+.css { 
+  &, & svg { fill: var(--blue); color: var(--blue); }
 }
-
-.text-md {
-  color: var(--gray-200);
-  font: var(--text-md);
+.js { 
+  &, & svg { fill: var(--yellow); color: var(--yellow); }
 }
-
-.git, .git svg { fill: var(--gray-200); color: var(--gray-200); }
-.html, .html svg { fill: var(--red); color: var(--red); }
-.css, .css svg { fill: var(--blue); color: var(--blue); }
-.js, .js svg { fill: var(--yellow); color: var(--yellow); }
+.devices { 
+  &, & svg { fill: var(--purple); color: var(--purple); }
+}
+.code { 
+  &, & svg { fill: var(--green); color: var(--green); }
+}
+.figma { 
+  &, & svg { fill: var(--yellow); color: var(--yellow); }
+}
 
 .container {
   padding-inline: 32px;
   margin-inline: auto;
   justify-content: space-between;
   max-width: 1280px;
+}
+
+.grid {
+  display: grid;
 }
 
 html {
@@ -80,18 +82,18 @@ svg {
   display: flex;
 }
 
-a svg {
-  cursor: pointer;
-}
-
 a {
   text-decoration: none;
   color: inherit;
   display: inline-block;
-}
 
-a:visited {
-  color: inherit;
+  & svg {
+    cursor: pointer;
+  }
+
+  &:visited {
+    color: inherit;
+  }
 }
 
 .scroll-link {
@@ -100,20 +102,21 @@ a:visited {
   color: var(--gray-300);
   transition: transform 0.3s ease, color 0.3s ease;
   cursor: pointer;
-}
 
-.scroll-link:hover {
-  transform: scale(1.2);
-  color: var(--red);
   & svg {
-    animation-play-state: paused;
+    display: block;
+    fill: currentColor;
+    animation: bounce 2s infinite ease-in-out;
   }
-}
 
-.scroll-link svg {
-  display: block;
-  fill: currentColor;
-  animation: bounce 2s infinite ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+    color: var(--red);
+    
+    & svg {
+      animation-play-state: paused;
+    }
+  }
 }
 
 @keyframes bounce {

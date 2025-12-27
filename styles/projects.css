@@ -82,7 +82,6 @@
     -webkit-box-orient: vertical;  
     overflow: hidden;
     text-overflow: ellipsis;
-
   }
 
   & .title-md {
@@ -90,7 +89,6 @@
   }
 
   & .grid {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); 
     gap: 24px;
   }
