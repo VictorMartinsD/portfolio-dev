@@ -246,8 +246,18 @@
   & header {
     & div {
       max-width: 680px;
-      & p:nth-child(2) { margin-block: 8px 20px; }
-      & p span { color: var(--red); }
+
+      & .title-lg { 
+        margin-block: 8px 20px; 
+      }
+
+      & .subtitle {
+        color: var(--gray-200);
+
+        & span {
+          color: var(--red);
+        }
+      }
     }
   }
 
