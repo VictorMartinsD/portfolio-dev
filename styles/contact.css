@@ -1,0 +1,95 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  
+  width: 100%;
+  min-height: 100vh;
+  
+  padding: 128px 120px 200px 120px;
+
+  background-image: url('../assets/background/Background_Contacts.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-color: var(--gray-400);
+  background-attachment: fixed;
+
+  & .subtitle {
+    color: var(--purple);
+  }
+
+  & .contact-links {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 48px;
+    margin-left: auto; 
+    margin-right: auto;
+
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      & li.linkedin:hover .link-info svg { color: var(--blue); }
+      & li.github:hover .link-info svg   { color: #ffffff; }
+      & li.email:hover .link-info svg    { color: var(--red); }
+      & li.whatsapp:hover .link-info svg { color: #25d366; }
+
+      & li a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        
+        width: 100%;
+        background-color: var(--gray-400);
+        border: 1px solid transparent;
+        border-radius: 12px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        & .link-info {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          color: var(--gray-200);
+          
+          & svg {
+            transition: color 0.3s ease;
+          }
+
+          & span {
+            font-family: var(--font-maven);
+            font-weight: 500;
+          }
+        }
+
+        & .arrow {
+          color: var(--blue);
+          transition: transform 0.3s ease;
+          flex-shrink: 0; 
+        }
+
+        &:hover {
+          transform: translateY(-4px);
+          background-color: #32363f;
+          border-color: var(--blue);
+          
+          box-shadow: 
+            inset 0 0 12px rgba(57, 150, 219, 0.1), 
+            0 10px 30px rgba(0, 0, 0, 0.4),
+            0 0 20px rgba(57, 150, 219, 0.25);
+        }
+
+        &:hover .arrow {
+          transform: translate(3px, -3px);
+        }
+      }
+    }
+  }
+}
