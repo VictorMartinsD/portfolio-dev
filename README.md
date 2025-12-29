@@ -1,4 +1,4 @@
-# Portfolio Dev - Victor Martins
+# Portfolio Dev - Victor Martins Dias
 
 ## 🔗 Links do Projeto
 
@@ -33,13 +33,13 @@ Este projeto é a implementação de um layout proposto pela **Rocketseat**. O d
 * Estilização modular e escalável.
 * Design 100% responsivo para todos os dispositivos.
 
-Desenvolvido por [Victor Martins](https://github.com/VictorMartinsD) como parte do programa de formação **[Full-Stack/Rocketseat]**.
+Desenvolvido por [Victor Martins Dias](https://github.com/VictorMartinsD) como parte do programa de formação **[Full-Stack/Rocketseat]**.
 
 ---
 
 ## 🇺🇸 English
 
-# Portfolio Dev - Victor Martins
+# Portfolio Dev - Victor Martins Dias
 
 ## 🔗 Project Links
 
@@ -64,4 +64,4 @@ This project is an implementation of a layout proposed by **Rocketseat**. The ch
 * Modular and scalable styling.
 * 100% responsive design for all devices.
 
-Developed by [Victor Martins](https://github.com/VictorMartinsD) as part of the **[Full-Stack/Rocketseat]** training program.
+Developed by [Victor Martins Dias](https://github.com/VictorMartinsD) as part of the **[Full-Stack/Rocketseat]** training program.
