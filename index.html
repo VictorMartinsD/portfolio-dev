@@ -41,7 +41,8 @@
 </head>
 
 <body>
-  <section class="intro">
+  <main>
+    <section class="intro" aria-labelledby="intro-title">
     <div class="container">
       <header>
         <input type="checkbox" id="terminal-toggle" style="display: none;">
@@ -60,7 +61,7 @@
 
         <div>
           <p class="subtitle">Hello World! Meu nome é <span>Victor Martins Dias</span> e sou</p>
-          <p class="title-lg">Desenvolvedor Web</p>
+          <h1 class="title-lg" id="intro-title">Desenvolvedor Web</h1>
           <p class="text-sm">Crio experiências digitais que unem design e funcionalidade. Minha paixão por tecnologia me
             move a desenvolver sistemas que simplificam processos e geram valor real para os usuários.</p>
         </div>
@@ -110,18 +111,18 @@
     </div>
   </section>
 
-  <section class="projects" id="projects">
+  <section class="projects" id="projects" aria-labelledby="projects-title">
     <div class="container">
       <header>
         <p class="subtitle">Meu trabalho</p>
-        <p class="title-md">Veja os projetos em destaque</p>
+        <h2 class="title-md" id="projects-title">Veja os projetos em destaque</h2>
       </header>
 
       <div class="grid">
         <article class="project-card">
           <img class="project-image" src="assets/thumbnail/Thumbnail_GeekWord.png" alt="E-commerce geek com renderização dinâmica de produtos e lógica de filtragem por categorias via JavaScript e DOM.">
           <a class="card-link" href="https://github.com/VictorMartinsD/m1-catalogo-geek-template-VictorMartinsD" target="_blank" rel="noopener noreferrer">
-            <p class="title-sm">Catálogo Geek</p>
+            <h3 class="title-sm">Catálogo Geek</h3>
           </a>
           <p class="project-description text-sm">E-commerce geek com renderização dinâmica de produtos e lógica de filtragem por categorias via JavaScript e DOM.</p>
           <div class="tech-stack">
@@ -140,7 +141,7 @@
         <article class="project-card">
           <img class="project-image" src="assets/thumbnail/Tumbnail_RedeSocial_TechPosters.png" alt="Interface de rede social responsiva com feed dinâmico e interações em tempo real utilizando JavaScript e Flexbox">
           <a class="card-link" href="https://github.com/VictorMartinsD/entrega-criando-rede-social-VictorMartinsD" target="_blank" rel="noopener noreferrer">
-            <p class="title-sm">Rede Social (TechPosters)</p>
+            <h3 class="title-sm">Rede Social (TechPosters)</h3>
           </a>
           <p class="project-description text-sm">Interface de rede social responsiva com feed dinâmico e interações em tempo real utilizando JavaScript e Flexbox.</p>
           <div class="tech-stack">
@@ -159,7 +160,7 @@
         <article class="project-card">
           <img class="project-image" src="assets/thumbnail/Thumbnail_Tech_News.png" alt="Layout estruturado de portal de notícias com foco em hierarquia visual, tipografia e organização de conteúdo responsivo">
           <a class="card-link" href="https://github.com/VictorMartinsD/portal-de-noticias" target="_blank" rel="noopener noreferrer">
-            <p class="title-sm">Portal de Notícias</p>
+            <h3 class="title-sm">Portal de Notícias</h3>
           </a>
           <p class="project-description text-sm">Layout estruturado de portal de notícias com foco em hierarquia visual, tipografia e organização de conteúdo responsivo.</p>
           <div class="tech-stack">
@@ -175,7 +176,7 @@
         <article class="project-card">
           <img class="project-image" src="assets/thumbnail/Thumbnail_Travelgram.png" alt="Rede social onde as pessoas mostram os registros de suas viagens pelo mundo com foco em design limpo e moderno">
           <a class="card-link" href="https://github.com/VictorMartinsD/projeto-travelgram" target="_blank" rel="noopener noreferrer">
-            <p class="title-sm">Travelgram</p>
+            <h3 class="title-sm">Travelgram</h3>
           </a>
           <p class="project-description text-sm">Rede social onde as pessoas mostram os registros de suas viagens pelo mundo com foco em design limpo e moderno.</p>
           <div class="tech-stack">
@@ -191,7 +192,7 @@
         <article class="project-card">
           <img class="project-image" src="assets/thumbnail/Thumbnail_Kenzieflix.png" alt="Plataforma de streaming com catálogo de vídeos renderizado dinamicamente, simulando a experiência da Netflix">
           <a class="card-link" href="https://github.com/VictorMartinsD/m1-kenzie-flix_VictorMartinsD" target="_blank" rel="noopener noreferrer">
-            <p class="title-sm">Kenzieflix</p>
+            <h3 class="title-sm">Kenzieflix</h3>
           </a>
           <p class="project-description text-sm">Plataforma de streaming com catálogo de vídeos renderizado dinamicamente, simulando a experiência da Netflix.</p>
           <div class="tech-stack">
@@ -207,7 +208,7 @@
         <article class="project-card">
           <img class="project-image" src="assets/thumbnail/Thumbnail_Busan.png" alt="Página de destino focada em turismo, utilizando técnicas de layout para destacar pontos turísticos e informações locais">
           <a class="card-link" href="https://github.com/VictorMartinsD/local-turistico" target="_blank" rel="noopener noreferrer">
-            <p class="title-sm">Local Turístico</p>
+            <h3 class="title-sm">Local Turístico</h3>
           </a>
           <p class="project-description text-sm">Página de destino focada em turismo, utilizando técnicas de layout para destacar pontos turísticos e informações locais.</p>
           <div class="tech-stack">
@@ -224,11 +225,11 @@
     </div>
   </section>
 
-  <section class="services">
+  <section class="services" aria-labelledby="services-title">
     <div class="container">
       <header>
         <p class="subtitle">Meus serviços</p>
-        <p class="title-md">Como posso ajudar o seu negócio</p>
+        <h2 class="title-md" id="services-title">Como posso ajudar o seu negócio</h2>
       </header>
       <div class="grid">
         <div>
@@ -236,7 +237,7 @@
             <use href="assets/img/icons.svg#devices"></use>
           </svg>
           <header>
-            <p class="title-sm">Websites e Aplicativos</p>
+            <h3 class="title-sm">Websites e Aplicativos</h3>
             <p class="text-sm">Desenvolvimento de interfaces</p>
           </header>
         </div>
@@ -245,7 +246,7 @@
             <use href="assets/img/icons.svg#code"></use>
           </svg>
           <header>
-            <p class="title-sm">Código Semântico</p>
+            <h3 class="title-sm">Código Semântico</h3>
             <p class="text-sm">Foco em acessibilidade e SEO</p>
           </header>
         </div>
@@ -254,18 +255,18 @@
             <use href="assets/img/icons.svg#figma"></use>
           </svg>
           <header>
-            <p class="title-sm">Do Figma ao Código</p>
+            <h3 class="title-sm">Do Figma ao Código</h3>
             <p class="text-sm">Transformação de designs em realidade</p>
           </header>
         </div>
       </div>
     </div>
   </section>
-    <section class="contact">
+    <section class="contact" aria-labelledby="contact-title">
     <div class="container">
       <header>
         <p class="subtitle">Contato</p>
-        <p class="title-md">Gostou do meu trabalho?</p>
+        <h2 class="title-md" id="contact-title">Gostou do meu trabalho?</h2>
         <p class="text-md">Entre em contato, acompanhe meu trabalho nas redes ou explore meus projetos!</p>
       </header>
 
@@ -330,6 +331,7 @@
       </nav>
     </div>
   </section>
+  </main>
   <footer>
     <div class="container">
       <p>&copy; 2025 Victor Martins Dias. Desenvolvido com foco em performance e acessibilidade.</p>
