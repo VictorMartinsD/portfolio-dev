@@ -13,6 +13,10 @@
   background-color: var(--gray-400);
   background-attachment: fixed;
 
+  & #terminal-toggle {
+    display: none;
+  }
+
   & figure {
     position: relative;
     width: 88px;
@@ -66,7 +70,7 @@
       left: 125%;
       top: 50%;
       transform: translateY(-50%);
-      width: max-content; 
+      width: max-content;
       min-width: 180px;
       background-color: #0d1117;
       border: 1px solid #30363d;
@@ -94,7 +98,7 @@
 
     & .typing-text {
       color: #3fb950;
-      font-family: 'Inconsolata', monospace;
+      font-family: "Inconsolata", monospace;
       font-size: 13px;
       margin-bottom: 6px;
       white-space: nowrap;
@@ -102,8 +106,12 @@
       width: 0;
       display: block;
 
-      &.delay { animation-delay: 1.8s !important; }
-      &.delay-2 { animation-delay: 3.6s !important; }
+      &.delay {
+        animation-delay: 1.8s !important;
+      }
+      &.delay-2 {
+        animation-delay: 3.6s !important;
+      }
     }
 
     #terminal-toggle:checked ~ label & {
@@ -114,7 +122,7 @@
       }
 
       & .typing-text {
-        animation: 
+        animation:
           typing 1.5s steps(30, end) forwards,
           blink 0.75s step-end infinite;
         border-right: 2px solid #3fb950;
@@ -193,52 +201,97 @@
     }
 
     &.git {
-      & svg { color: var(--gray-200); fill: var(--gray-200); }
+      & svg {
+        color: var(--gray-200);
+        fill: var(--gray-200);
+      }
       &:hover {
         border-color: var(--gray-200);
-        & .tooltip { border-color: var(--gray-200); }
-        & .tooltip::after { border-top-color: var(--gray-200); }
-        & svg { filter: drop-shadow(0 0 5px var(--gray-200)); }
+        & .tooltip {
+          border-color: var(--gray-200);
+        }
+        & .tooltip::after {
+          border-top-color: var(--gray-200);
+        }
+        & svg {
+          filter: drop-shadow(0 0 5px var(--gray-200));
+        }
       }
     }
 
     &.html {
-      & svg { color: var(--red); fill: var(--red); }
+      & svg {
+        color: var(--red);
+        fill: var(--red);
+      }
       &:hover {
         border-color: var(--red);
-        & .tooltip { border-color: var(--red); }
-        & .tooltip::after { border-top-color: var(--red); }
-        & svg { filter: drop-shadow(0 0 5px var(--red)); }
+        & .tooltip {
+          border-color: var(--red);
+        }
+        & .tooltip::after {
+          border-top-color: var(--red);
+        }
+        & svg {
+          filter: drop-shadow(0 0 5px var(--red));
+        }
       }
     }
 
     &.css {
-      & svg { color: var(--blue); fill: var(--blue); }
+      & svg {
+        color: var(--blue);
+        fill: var(--blue);
+      }
       &:hover {
         border-color: var(--blue);
-        & .tooltip { border-color: var(--blue); }
-        & .tooltip::after { border-top-color: var(--blue); }
-        & svg { filter: drop-shadow(0 0 5px var(--blue)); }
+        & .tooltip {
+          border-color: var(--blue);
+        }
+        & .tooltip::after {
+          border-top-color: var(--blue);
+        }
+        & svg {
+          filter: drop-shadow(0 0 5px var(--blue));
+        }
       }
     }
 
     &.js {
-      & svg { color: var(--yellow); fill: var(--yellow); }
+      & svg {
+        color: var(--yellow);
+        fill: var(--yellow);
+      }
       &:hover {
         border-color: var(--yellow);
-        & .tooltip { border-color: var(--yellow); }
-        & .tooltip::after { border-top-color: var(--yellow); }
-        & svg { filter: drop-shadow(0 0 5px var(--yellow)); }
+        & .tooltip {
+          border-color: var(--yellow);
+        }
+        & .tooltip::after {
+          border-top-color: var(--yellow);
+        }
+        & svg {
+          filter: drop-shadow(0 0 5px var(--yellow));
+        }
       }
     }
 
     &.figma {
-      & svg { color: var(--yellow); fill: var(--yellow); }
+      & svg {
+        color: var(--yellow);
+        fill: var(--yellow);
+      }
       &:hover {
         border-color: var(--yellow);
-        & .tooltip { border-color: var(--yellow); }
-        & .tooltip::after { border-top-color: var(--yellow); }
-        & svg { filter: drop-shadow(0 0 5px var(--yellow)); }
+        & .tooltip {
+          border-color: var(--yellow);
+        }
+        & .tooltip::after {
+          border-top-color: var(--yellow);
+        }
+        & svg {
+          filter: drop-shadow(0 0 5px var(--yellow));
+        }
       }
     }
   }
@@ -247,8 +300,8 @@
     & div {
       max-width: 680px;
 
-      & .title-lg { 
-        margin-block: 8px 20px; 
+      & .title-lg {
+        margin-block: 8px 20px;
       }
 
       & .subtitle {
@@ -271,6 +324,26 @@
   }
 }
 
-@keyframes typing { from { width: 0; } to { width: 100%; } }
-@keyframes blink { from, to { border-color: transparent; } 50% { border-color: #3fb950; } }
-@keyframes fadeOut { to { opacity: 0; visibility: hidden; } }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #3fb950;
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
