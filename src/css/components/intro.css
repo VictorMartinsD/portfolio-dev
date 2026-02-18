@@ -6,7 +6,7 @@
   justify-content: center;
   min-height: 100vh;
   width: 100%;
-  background-image: url(../../assets/background/Background_Intro.png);
+  background-image: url(../../../assets/background/Background_Intro.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -321,29 +321,5 @@
     text-align: center;
     width: 100%;
     padding: 40px;
-  }
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blink {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #3fb950;
-  }
-}
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
   }
 }
